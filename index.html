@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
+
+    <title>ToDo</title>
+  </head>
+  <body>
+    <main class="main grid">
+      <div class="absolute hidden">
+        <p class="message__main">Succes</p>
+      </div>
+      <div class="main__header">
+        <p class="todo__total">Total: <span class="total__value"></span></p>
+        <p class="todo__total sort">&DownArrow;</p>
+      </div>
+
+      <section class="section">
+        <ul class="todo__lists">
+          <!-- <li class="todo__list">
+            <div>
+              <p class="todo__object">UserId: 1</p>
+              <p class="todo__object">id:1</p>
+              <p class="todo__object">title: "delectus aut autem</p>
+              <p class="todo__object">comleted: false</p>
+            </div>
+            <div class="btns">
+              <button class="btn btn__edit">Edit</button>
+              <button class="btn btn__delete">Delete</button>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+
+      <form action="" class="form">
+        <h3 class="heading">Submit ToDo</h3>
+
+        <label for="">Title</label>
+        <input type="text" class="title" />
+        <label for="">Completed:</label>
+        <input type="text" class="status" placeholder="true/false" />
+        <button type="submit" class="btn btn__submit">Submit</button>
+        <button class="btn btn__change hidden">Submit changes</button>
+        <p class="message message__validation"></p>
+      </form>
+    </main>
+  </body>
+</html>
